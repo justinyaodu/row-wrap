@@ -1,0 +1,82 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:not(button) {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+#scoreboard {
+  width: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+#game {
+  position: relative;
+  width: 80vh;
+  height: 80vh;
+  background: linear-gradient(to right, #048 0% 20%, #037 20% 40%, #048 40% 60%, #037 60% 80%, #048 80% 100%);
+}
+
+#rows-container {
+  box-sizing: content-box;
+  border-right: 4px dashed #f00;
+  height: 80vh;
+  overflow: hidden;
+}
+
+#rows {
+  position: relative;
+}
+
+.row {
+  height: 40vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.tile {
+  width: 16vh;
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iceberg {
+  width: 15vh;
+  height: 3.75vh;
+}
+
+.fish {
+  width: 3vh;
+  height: 3vh;
+}
+
+#player {
+  position: absolute;
+  width: 4vh;
+  height: 2vh;
+  top: 65vh;
+}
+
+#controller {
+  width: 56vh;
+  text-align: right;
+  resize: horizontal;
+}
+
+#play-again {
+  display: none;
+}
+
+#play-again-container {
+  width: 80vh;
+  display: flex;
+  justify-content: center;
+}
